@@ -28,16 +28,18 @@
   width: 911px;
   margin: 0 auto;
   margin-top: 50px;
+  z-index: 1;
 }
 
-.arrow {
+/* .arrow {
   position: absolute;
   margin-top: 58px;
   margin-left: 73%;
-}
+} */
 
 .tags__list {
   padding: 0px;
+  z-index: 1;
 }
 
 .tags__list-element {
@@ -91,6 +93,11 @@ span {
   color: #BA32A6;
 }
 
+/* .descr {
+  position: relative;
+  z-index: 9999;
+} */
+
 /* НАЖАТИЕ НА ТЭГИ - НАЧАЛО */
 
 .clicked-main {
@@ -122,38 +129,51 @@ span {
 
 /* ПОЯВЛЕНИЕ ПОДСКАЗОК - НАЧАЛО */
 
-[data-tooltip]:before {
-    /* needed - do not touch */
-    content: attr(data-tooltip);
-    position: absolute;
-    opacity: 0;
+.show-descr {
+  opacity: 0;
 
-    /* customizable */
-    transition: all 0.15s ease;
-    padding: 10px;
-    color: #333;
-    box-shadow: 0px 0px 1px 1px silver;
-
-        /* Auto Layout */
-    display: none;
-    flex-direction: row;
-    align-items: flex-start;
-    max-width: 245px;
-    font-size: 14px;
-}
-
-[data-tooltip]:hover::before {
-    /* needed - do not touch */
-    display: flex;
-    opacity: 1;
-
-    /* customizable */
-    margin-top: 30px;
-    margin-left: 5px;
-
-    /* White 1 */
-    background: #FFFFFF;
-    border-radius: 14px;
+  position:absolute;
+  padding:10px;
+  z-index: 1000;
+  width: 245px;
+  font-size: 14px;
+  color: #333;
+  box-shadow: 0px 0px 1px 1px silver;
+  background: #FFFFFF;
+  border-radius: 14px;
 }
 
 /* ПОЯВЛЕНИЕ ПОДСКАЗОК - КОНЕЦ */
+
+/* РАБОТА СО СЛАЙДЕРОМ - НАЧАЛО */
+
+.prev,
+.next {
+  position: absolute;
+  top: 22%;
+  /* height: 60px;
+  width: 60px; */
+  z-index: 150;
+  cursor: pointer;
+}
+
+.next {
+  right: 0;
+  margin-right: -15px;
+}
+
+.prev {
+  margin-left: -15px;
+}
+
+.slick-slider, .slick-slider * {
+  outline: none;
+  z-index: 1;
+}
+
+.slick-track, .slick-list, .single-item, .slick-slider {
+  z-index: 1;
+}
+
+
+/* РАБОТА СО СЛАЙДЕРОМ - НАЧАЛО */
