@@ -9,9 +9,9 @@ def index(request):
         query = request.POST.get("query")
         tags = ['жакет', 'пиджак', 'жилет']
 
-        return render(request, 'tags_app/wb_front/index.html', {'tags': tags})
+        return render(request, 'tags_app/index.html', {'tags': tags})
     else:
-        return render(request, 'tags_app/wb_front/index.html')
+        return render(request, 'tags_app/index.html')
 
 
 # отправка тегов
