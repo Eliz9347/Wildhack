@@ -1,0 +1,179 @@
+.container {
+  font-size: 30px;
+}
+
+.wrapper {
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.search-input {
+  display: block;
+  height: 40px;
+  width: 891px;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 28px;
+  border: 0;
+  background: #F2F2F2;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  padding-left: 20px;
+}
+
+.tags {
+  display: block;
+  width: 911px;
+  margin: 0 auto;
+  margin-top: 50px;
+  z-index: 1;
+}
+
+/* .arrow {
+  position: absolute;
+  margin-top: 58px;
+  margin-left: 73%;
+} */
+
+.tags__list {
+  padding: 0px;
+  z-index: 1;
+}
+
+.tags__list-element {
+    /* Auto Layout */
+  display: inline-block;
+  text-align: center;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 10px;
+
+  position: static;
+  width: auto;
+  height: 28px;
+
+  /* White 1 */
+  background: #FFFFFF;
+  border: 1px solid rgba(186, 50, 166, 0.5);
+  box-sizing: border-box;
+  border-radius: 16px;
+
+  /* Inside Auto Layout */
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+  margin: 5px 11px;
+}
+
+.add-dots {
+  /* text-decoration-style: dotted; */
+  border-bottom: 0.75px dashed #BA32A6;
+}
+
+a {
+  /* White 1 */
+  border: 0;
+  color: black;
+  background: #FFFFFF;
+  text-decoration: none;
+}
+
+a:hover {
+  /* White 1 */
+  border: 0;
+  color: black;
+  background-color: inherit;
+  text-decoration: none;
+}
+
+span {
+  color: #BA32A6;
+}
+
+/* .descr {
+  position: relative;
+  z-index: 9999;
+} */
+
+/* НАЖАТИЕ НА ТЭГИ - НАЧАЛО */
+
+.clicked-main {
+  background-color: purple;
+  color: white;
+}
+
+.clicked-additional {
+  background-color: purple;
+  color: white;
+  opacity: 0.5;
+}
+
+.clicked-dots {
+  /* text-decoration-style: dotted; */
+  border-bottom: 0.75px dashed white;
+}
+
+/* НАЖАТИЕ НА ТЭГИ - КОНЕЦ */
+
+/* ВЫДАЧА РЕЗУЛЬТАТОВ - НАЧАЛО */
+
+.display-result {
+  display: none;
+  margin-top: 50px;
+}
+
+/* ВЫДАЧА РЕЗУЛЬТАТОВ - НАЧАЛО */
+
+/* ПОЯВЛЕНИЕ ПОДСКАЗОК - НАЧАЛО */
+
+.show-descr {
+  opacity: 0;
+
+  position:absolute;
+  padding:10px;
+  z-index: 1000;
+  width: 245px;
+  font-size: 14px;
+  color: #333;
+  box-shadow: 0px 0px 1px 1px silver;
+  background: #FFFFFF;
+  border-radius: 14px;
+}
+
+/* ПОЯВЛЕНИЕ ПОДСКАЗОК - КОНЕЦ */
+
+/* РАБОТА СО СЛАЙДЕРОМ - НАЧАЛО */
+
+.prev,
+.next {
+  position: absolute;
+  top: 22%;
+  /* height: 60px;
+  width: 60px; */
+  z-index: 150;
+  cursor: pointer;
+}
+
+.next {
+  right: 0;
+  margin-right: -15px;
+}
+
+.prev {
+  margin-left: -15px;
+}
+
+.slick-slider, .slick-slider * {
+  outline: none;
+  z-index: 1;
+}
+
+.slick-track, .slick-list, .single-item, .slick-slider {
+  z-index: 1;
+}
+
+
+/* РАБОТА СО СЛАЙДЕРОМ - НАЧАЛО */
