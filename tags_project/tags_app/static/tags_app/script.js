@@ -39,26 +39,27 @@ $(document).ready(function() {
       if(attr) {
         $(".show-descr").css('left', $(link_on_li).offset().left);
         $(".show-descr").css('top', $(link_on_li).offset().top + 25);
-        $(".show-descr").css('opacity',  1);
+        $(".show-descr").css('display',  'flex');
         $(".show-descr").html($(link_on_li).attr('data-tooltip'));
       };
     });
     // сокрытие блока описания при уведении мышки от тега
     $(link_on_tag).mouseout(function(){
-      $(".show-descr").css('opacity',  0);
+      $(".show-descr").css('display',  'none');
     });
   });
 
-  // работа слайдера
-  $('.single-item').slick({
-     variableWidth: true,
-     infinite: true,
-     dots: false,
-     slidesToShow: 1,
-     slidesToScroll: 1,
-     prevArrow: "<img src= './static/tags_app/img/vector-left.png' alt='left-arrow' class='prev'>",
-     nextArrow: "<img src= './static/tags_app/img/vector-right.png' alt='right-arrow' class='next'>",
-   });
+  // // работа слайдера
+  // $('.single-item').slick({
+  //    variableWidth: true,
+  //    infinite: true,
+  //    dots: false,
+  //    slidesToShow: 1,
+  //    slidesToScroll: 1,
+  //    prevArrow: "<img src= './img/vector-left.png' alt='left-arrow' class='prev'>",
+  //    nextArrow: "<img src= './img/vector-right.png' alt='right-arrow' class='next'>",
+  //  });
+
 
 
 });

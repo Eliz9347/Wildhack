@@ -78,7 +78,7 @@ a {
   border: 0;
   color: black;
   background: #FFFFFF;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 a:hover {
@@ -86,7 +86,7 @@ a:hover {
   border: 0;
   color: black;
   background-color: inherit;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 span {
@@ -130,7 +130,7 @@ span {
 /* ПОЯВЛЕНИЕ ПОДСКАЗОК - НАЧАЛО */
 
 .show-descr {
-  opacity: 0;
+  display: none;
 
   position:absolute;
   padding:10px;

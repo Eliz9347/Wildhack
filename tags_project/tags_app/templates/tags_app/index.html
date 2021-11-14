@@ -92,5 +92,18 @@
     <link rel="stylesheet" href="{% static 'tags_app/slick/slick-theme.css' %}">
     <script src="{% static 'tags_app/slick/slick.min.js' %}"></script>
     <script src="{% static 'tags_app/script.js' %}"></script>
+
+    <script>
+    // работа слайдера
+    $('.single-item').slick({
+       variableWidth: true,
+       infinite: true,
+       dots: false,
+       slidesToShow: 1,
+       slidesToScroll: 1,
+       prevArrow: "<img src= \"{% static 'tags_app/img/vector-left.png' %}\" alt='left-arrow' class='prev'>",
+       nextArrow: "<img src= \"{% static 'tags_app/img/vector-right.png' %}\" alt='right-arrow' class='next'>",
+     });
+    </script>
   </body>
 </html>
